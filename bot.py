@@ -12,7 +12,6 @@ async def on_ready():
     await client.change_presence(activity=discord.Streaming(name="ItsCopex#9227", url="https://twitch.tv/itscopex"))
 
 @client.command()
-@commands.has_permissions(manage_emojis = True)
 async def attack(ctx, *, content):
     await ctx.send(content)
 
