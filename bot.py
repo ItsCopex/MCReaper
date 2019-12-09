@@ -9,7 +9,7 @@ client.remove_command("help")
 
 @client.event
 async def on_ready():
-    await client.change_presence(activity=discord.Streaming(name="ItsCopex#9227 add me", url="https://twitch.tv/itscopex"))
+    await client.change_presence(activity=discord.Streaming(name="ItsCopex#9227", url="https://twitch.tv/itscopex"))
 
 @client.command()
 async def attack(ctx, *, content):
