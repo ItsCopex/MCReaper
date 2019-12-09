@@ -14,12 +14,17 @@ async def on_ready():
 @client.command()
 async def attack(ctx, *, content):
     await ctx.send(content)
-
+    
 @client.command()
-async def help(ctx):
-    await ctx.send(f"*Flooding !attack flood <host> <port> <version> <time>*")
-    await ctx.send(f"*Instantcrashing !attack instantcrash <host> <port> <version> <time>*")
-    await ctx.send(f"*Nullpingcrash !attack nullping <host> <port> <version> <time>*")
+async def help():
+    embed =  discord.embed(
+        title = "Attack Help",
+        colour = discord.Colour.dark_green()
+    )
+
+    embed.set_footer(text="Flooding !attack flood <host> <port> <version> <time>")
+    embed.set_footer(text="Instantcrashing !attack instantcrash <host> <port> <version> <time>")
+    embed.set_footer(text="Nullpingcrash !attack nullping <host> <port> <version> <time>")
 
 
 client.run(os.environ["DISCORD_TOKEN"])
