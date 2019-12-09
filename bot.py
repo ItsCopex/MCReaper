@@ -16,9 +16,11 @@ async def attack(ctx, *, content):
     await ctx.send(content)
     
 @client.command()
-async def help():
+async def help(ctx):
+    channel = ctx.message.channel
     embed =  discord.embed(
         title = "Attack Help",
+        desccription = "ewflk",
         colour = discord.Colour.dark_green()
     )
 
