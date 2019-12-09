@@ -24,9 +24,9 @@ async def help(ctx):
         colour = discord.Colour.dark_green()
     )
 
-    embed.add_field(name="Flooding !attack flood <host> <port> <version> <time>")
-    embed.add_field(name="Instantcrashing !attack instantcrash <host> <port> <version> <time>")
-    embed.add_field(name="Nullpingcrash !attack nullping <host> <port> <version> <time>")
+    embed.add_field(name="Flooding", value="!attack flood <host> <port> <version> <time>", inline=False)
+    embed.add_field(name="Instantcrashing" value="!attack instantcrash <host> <port> <version> <time>", inline=True)
+    embed.add_field(name="Nullpingcrash" value="!attack nullping <host> <port> <version> <time>", inline=True)
 
 
 client.run(os.environ["DISCORD_TOKEN"])
