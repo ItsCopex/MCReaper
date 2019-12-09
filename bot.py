@@ -30,6 +30,8 @@ async def help(ctx):
     embed.add_field(name="Flooding", value="!attack flood <host> <port> <version> <time>", inline=True)
     embed.add_field(name="Instantcrashing", value="!attack instantcrash <host> <port> <version> <time>", inline=True)
     embed.add_field(name="Nullpingcrash", value="!attack nullping <host> <port> <version> <time>", inline=True)
+    
+    client.send_message(channel, embed=embed)
 
 
 client.run(os.environ["DISCORD_TOKEN"])
