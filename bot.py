@@ -20,7 +20,7 @@ async def help(ctx):
     channel = ctx.message.channel
     embed =  discord.embed(
         title = "Attack Help",
-        desccription = "ewflk",
+        description = "ewflk",
         colour = discord.Colour.dark_green()
     )
     embed.set_author(name="ItsCopex#9227),
